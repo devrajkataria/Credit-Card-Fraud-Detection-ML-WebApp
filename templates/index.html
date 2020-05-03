@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/indexstyle.css') }}">
+<title>ML API</title>
+</head>
+<body>
+<form action="{{ url_for('predict')}}" method="POST">
+  <input id="input-1" type="text" placeholder="Enter time" name ="time" required autofocus />
+  <label for="input-1">
+    <span class="label-text">TIME</span>
+    <span class="nav-dot"></span>
+    <div class="signup-button-trigger">Credit Card Fraud Prediction</div>
+  </label>
+  <input id="input-2" type="text" placeholder="Enter Amount" name="amount" required />
+  <label for="input-2">
+    <span class="label-text">AMOUNT</span>
+    <span class="nav-dot"></span>
+  </label>
+  <input id="input-3" type="text" placeholder="Enter Transaction Method" name="tm" required />
+  <label for="input-3">
+    <span class="label-text">Transaction Method</span>
+    <span class="nav-dot"></span>
+  </label>
+  <input id="input-4" type="text" placeholder="Transaction id" name="ti" required />
+  <label for="input-4">
+    <span class="label-text">Transaction id</span>
+    <span class="nav-dot"></span>
+  </label>
+  <input id="input-5" type="text" placeholder="Enter Type Of card" name="ct" required />
+  <label for="input-5">
+    <span class="label-text">Card Type</span>
+    <span class="nav-dot"></span>
+  </label>
+  <input id="input-6" type="text" placeholder="Enter Location" name="location" required />
+  <label for="input-6">
+    <span class="label-text">Enter Location</span>
+    <span class="nav-dot"></span>
+  </label>
+  <input id="input-7" type="text" placeholder="Enter Bank" name="em" required />
+  <label for="input-7">
+    <span class="label-text">Enter Bank</span>
+    <span class="nav-dot"></span>
+  </label>
+  <button type="submit">Predict</button>
+  <p class="tip">Press Tab</p>
+  <div class="signup-button">Credit card Fraud Detection</div>
+</form>
+</body>
+</html>
